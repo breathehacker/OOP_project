@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="1179.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication8.MainWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#34495e" height="105.0" layoutX="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1187.0" />
+      <ImageView fitHeight="46.0" fitWidth="181.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo_3.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="1114.0" layoutY="14.0" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: #3498db;" text=" " />
+      <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" layoutX="1127.0" layoutY="37.0" size="20" />
+      <HBox layoutX="-3.0" layoutY="59.0" prefHeight="47.0" prefWidth="1187.0" style="-fx-cursor: hand;">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#dashboard" prefHeight="47.0" prefWidth="236.0" style="-fx-background-color: #1abc9c;" text="Dashboard" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#products" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #e74c3c;" text="Products" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#order" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #9b59b6;" text="Orders" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#customer" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #795548;" text="Customers" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#articles" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #ffcc00; -fx-opacity: 0.95;" text="Articles" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="pane" layoutX="1.0" layoutY="110.0" prefHeight="521.0" prefWidth="1179.0" />
+     
+   </children>
+</AnchorPane>

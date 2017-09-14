@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="513.0" prefWidth="1183.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication8.OrderViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeded" height="41.0" layoutX="-22.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1205.0" />
+      <FontAwesomeIconView fill="GREY" glyphName="EDIT" layoutX="1016.0" layoutY="33.0" size="25" wrappingWidth="28.0" />
+      <JFXButton layoutX="1011.0" layoutY="7.0" onAction="#showData" prefHeight="34.0" prefWidth="39.0" style="-fx-cursor: hand; -fx-opacity: 0;" text=" ">
+        
+      </JFXButton>
+      <FontAwesomeIconView fill="GREY" glyphName="PLUS_CIRCLE" layoutX="1065.0" layoutY="33.0" size="25" wrappingWidth="28.0" />
+      <JFXButton layoutX="1060.0" layoutY="7.0" prefHeight="34.0" prefWidth="39.0" style="-fx-opacity: 0; -fx-cursor: hand;" text=" ">
+        
+      </JFXButton>
+      <FontAwesomeIconView fill="GREY" glyphName="TRASH_ALT" layoutX="1112.0" layoutY="33.0" size="25" wrappingWidth="28.0" />
+      <JFXButton layoutX="1107.0" layoutY="7.0" prefHeight="34.0" prefWidth="39.0" style="-fx-opacity: 0; -fx-cursor: hand;" text=" ">
+       
+      </JFXButton>
+      <JFXScrollPane layoutX="-7.0" layoutY="45.0" prefHeight="467.0" prefWidth="1190.0" style="-fx-background-color: black;">
+         <children>
+            <JFXTreeTableView fx:id="table" />
+         </children></JFXScrollPane>
+   </children>
+</AnchorPane>

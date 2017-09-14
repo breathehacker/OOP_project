@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="502.0" style="-fx-background-color: #ecf0f1;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication8.ProductEditController">
+    <stylesheets>
+        <URL value="@productedit.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="title" labelFloat="true" layoutX="252.0" layoutY="70.0" prefHeight="28.0" prefWidth="197.0" promptText="Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="vendor" labelFloat="true" layoutX="252.0" layoutY="115.0" prefHeight="28.0" prefWidth="197.0" promptText="Vendor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="scope" labelFloat="true" layoutX="252.0" layoutY="167.0" prefHeight="28.0" prefWidth="197.0" promptText="Scope">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tags" labelFloat="true" layoutX="73.0" layoutY="206.0" prefHeight="28.0" prefWidth="374.0" promptText="Tags">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="price" labelFloat="true" layoutX="73.0" layoutY="255.0" prefHeight="28.0" prefWidth="374.0" promptText="Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="productType" labelFloat="true" layoutX="73.0" layoutY="308.0" prefHeight="28.0" prefWidth="374.0" promptText="Product type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <HTMLEditor fx:id="html" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="8.0" layoutY="366.0" prefHeight="285.0" prefWidth="489.0" />
+      <JFXButton fx:id="theBtn" buttonType="RAISED" layoutX="415.0" layoutY="27.0" onAction="#update" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #16a085;" text="Update" textFill="WHITE" />
+      <Label fx:id="id" layoutX="25.0" layoutY="18.0" prefHeight="17.0" prefWidth="149.0" text="#1525278584" textFill="#16a085" />
+      <HBox alignment="CENTER" layoutX="25.0" layoutY="46.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="144.0" prefWidth="200.0" style="-fx-background-color: #ecf0f1;">
+         <children>
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton fx:id="picker" buttonType="RAISED" onAction="#Choosefile" style="-fx-background-color: #16a085;" text="+" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow color="#afe1da" height="35.83" radius="17.415" spread="0.08" width="35.83" />
+         </effect>
+      </HBox>
+      <JFXSpinner fx:id="spinner" layoutX="375.0" layoutY="11.0" />
+  
+   </children>
+</AnchorPane>
